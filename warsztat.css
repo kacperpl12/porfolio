@@ -82,20 +82,20 @@ h4
 }
 section 
 {
-    background-color: aliceblue; 
+    background-color:  #f9fcfe; 
 }
 #container-image 
 {
     background-color: white;
     border-radius:8%;
-    padding: 2%;
+    padding: 3%;
     display:inline-block;
     
 }
 #container-image > img
 {
-    height: 220px;
-    width: 200px;
+    height: 450px;
+    width: 350px;
 }
 
 .image, .text{
@@ -113,11 +113,33 @@ section .text
 {
     text-align: right;
 }
+menu 
+{
+
+}
 menu > h4 
 {
+    font-size: 20px;
     font-weight: 200;
+    color: black;
+    text-align: center;
+    padding-top: 5%;
 }
 menu > h4::after {
     
-    content:""
+    content:"umiejętności";
+    color: green;
+    font-size: 20px;
+}
+menu > p 
+{
+    text-align: center;
+    font-size: 16px;
+    padding-bottom: 5%;
+}
+menu .icons 
+{
+    text-align: center;
+    word-spacing: 15px;
+    
 }
