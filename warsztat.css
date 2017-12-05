@@ -12,7 +12,6 @@ p {
    line-height: 1.5em;
    font-size: 14px; 
 }
-
 .background 
 {
     background-image: url(img/header-background.jpg); 
@@ -56,12 +55,7 @@ nav li:hover
     color: white; 
     font-weight: 100;
 }
-.head h1 > span
-{
-    color: #1ac056; 
-    font-weight: 400;
-    
-}
+
 h4
 {
     text-align: center; 
@@ -80,7 +74,7 @@ h4
     width: 50%;
     float:left;
 }
-.background2 h2, .abilities h2
+section h2 
 {
     font-family: 'Roboto', sans-serif; 
     text-align: center; 
@@ -88,6 +82,11 @@ h4
     font-size: 26px;
     font-weight: 300;
     
+}
+section h2 > span, .head  span
+{
+    color:  #1ac056;
+    font-weight: 400;
 }
 .abilities > p 
 {
@@ -108,14 +107,11 @@ h4
     padding: 0 50px;
     
 }
-h2>span 
-{
-    color:  #1ac056;
-    font-weight: 400;
-}
+
 section 
 {
     float:left;
+    width: 100%;
 
 }
 section.background2 
@@ -161,84 +157,48 @@ section .text
 {
     text-align: right;
 }
+.section4 
+{
+    padding: 60px 70px;
+} 
 
-section > h4
+.section4  animation {
+  float:left;  
+}
+.animation .img 
 {
-    font-size: 20px;
-    font-weight: 200;
-    color: black;
-    text-align: center;
-    padding-top: 5%;
+    float:left;
+    width:33.3%;
 }
- h4 > span {
-    
-    color: green;
-    font-size: 20px;
-    font-weight: 400;
-}
-menu > p 
+.animation .img > img 
 {
-    text-align: center;
-    font-size: 16px;
+    max-width: 100%;
+    display:block;
 }
-menu .icons 
+.section4 .animation .img 
 {
-    padding-top: 5%;
-    text-align: center;
-    word-spacing: 15px;
-    padding-bottom:5%;
-    
-}
-.
-    
-.art-foot > h5 
-{
-    font-size: 20px;
-    color: black;
-    font-weight:100;
-    text-align: center;
-    padding-top: 10%;
-    padding-bottom: 10%;
-}
-h5 > span 
-{
-    font-size: 20px;
-    color: green;
-    font-weight: 400;
-    text-align: center;
-}
-.img foot 
-{
-text-align: 0;
-margin: 0;
-    
-}
-.img-foot div > div
-{
-    position:relative;
-    width: 28%;
-    height: 350px;
-    display:inline-block;
-    margin-left:2%;
-    align-items: center;
-}
-.img foot .animation {
-    width: 100%;
-    height: 100%;
-    opacity: 0.8;
-    background-color: #426179;
-    position: absolute; 
-    font-size: initial;
-}
-.animation div > div 
-{
-    border-style: 1px solid #fff;
-    margin: 10px;
-    height: 330px;
     position: relative;
     
-}
-.animation div div > div 
+} 
+.section4 .animation .img > .backimg 
 {
+    background-color: rgba(42, 61, 79, 0.8);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
     
+}
+.section4 .animation .img > .backimg > .inner-border 
+{
+    margin: 15px;
+    border: 1px solid #fff;
+}
+.section4 .animation .img:hover  > .backimg 
+{
+    opacity: 1;
 }
