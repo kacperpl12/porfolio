@@ -5,25 +5,25 @@
     <title>porftolio</title>
     <link href="https://fonts.googleapis.com/css?family=Lato|Roboto:100,200,300,400&amp;subset=latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="warsztat.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div class="background">
            <nav class="navigation">
              <ul>
-              <li><a>O mnie</a></li>
-              <li><a>umiejętności</a></li>
-              <li><a>porftolio</a></li>
-              <li><a>kontakt</a></li>
+              <li><a href="#background2">O mnie</a></li>
+              <li><a href="#abilities">umiejętności</a></li>
+              <li><a href="#section4">porftolio</a></li>
+              <li><a href="#last-section">kontakt</a></li>
               </ul>
             </nav> 
           <header class="head">
-               <h1>Jan <span>Kowalski</span></h1>
+               <h1>Jan <span>Nowak</span></h1>
                <h4>Front-End Developer</h4>
            </header>  
     </div>
-<section class="background2">
+<section id="background2">
   <h2>O <span>mnie</span></h2>
-  
    <div class="image half">
        <figure id="container-image">
            <img src="img/jan-nowak.jpg">
@@ -33,7 +33,7 @@
         <div class="text half">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis voluptatibus quas rem voluptate eveniet consequatur totam omnis, ipsa nisi architecto enim sit quaerat quod odit. Adipisci perspiciatis commodi sint quibusdam impedit. Recusandae doloribus enim ipsam veritatis consectetur ipsum modi nostrum dolor esse et natus amet dolorem quam magnam alias sapiente, dolores tenetur, consequuntur nobis at, earum tempora. Quam rerum ipsam quas? Delectus, magni eius animi accusantium ex corrupti ea error quo obcaecati, laboriosam praesentium magnam assumenda est, tempora quisquam dolore tenetur ipsum? Accusamus doloremque recusandae hic, sapiente vitae unde inventore expedita facilis beatae nostrum aspernatur repudiandae voluptatem, quis nam ducimus vel culpa soluta quo? Molestias sint, adipisci placeat a obcaecati ipsum accusamus maxime velit recusandae? Distinctio fugit quibusdam sit porro sunt, necessitatibus architecto. 
         </div>
     </section>
-    <section class="abilities">
+    <section id="abilities">
         <h2>Moje <span>umiejętności</span></h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit aspernatur magni beatae ipsam cum illo harum, obcaecati consequuntur optio libero, illum, sint quibusdam corporis vitae quas dolor alias, neque deserunt!</p>
         <div class="icons">
@@ -43,15 +43,46 @@
             <img src="icons/jquery.png" alt="jquery">
         </div>
     </section>
-    <section class="section4">
+    <section id="section4">
         <h2>Moje <span>portfolio</span></h2>
             <div class="animation">
-              
-                        <div class="img"><img src="img/portfolio1.jpg"><div class="backimg"><div class="inner-border">lorem1</div></div></div>
-                        <div class="img"><img src="img/portfolio2.jpg"><div class="backimg"><div class="inner-border">lorem2</div></div></div>
-                        <div class="img"><img src="img/portfolio4.jpg"><div class="backimg"><div class="inner-border">lorem3</div></div></div>
+                        <div class="img"><img src="img/portfolio1.jpg"><div class="backimg"><div class="inner-border"><h3>Lorem</h3><p>Opis projektu Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br><br></p><h4>Wykorzystane technologie</h4><p class="p4">HTML, CSS3, RWD, Bootstrap, Java Script. JQueryy</p><br><i class="fa fa-link fa-2x" aria-hidden="true"></i></div></div></div>
+                        <div class="img"><img src="img/portfolio2.jpg"><div class="backimg"> 
+                        <div class="inner-border"><h3>Lorem</h3><p>Opis projektu Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br><br></p><h4>Wykorzystane technologie</h4><p class="p4">HTML, CSS3, RWD, Bootstrap, Java Script. JQueryy</p><br><i class="fa fa-link fa-2x" aria-hidden="true"></i></div></div></div>
+                        <div class="img"><img src="img/portfolio4.jpg"><div class="backimg"><div class="inner-border"><h3>Lorem</h3><p>Opis projektu Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br><br></p><h4>Wykorzystane technologie</h4><p class="p4">HTML, CSS3, RWD, Bootstrap, Java Script. JQueryy</p><br><i class="fa fa-link fa-2x" aria-hidden="true"></i></div></div></div>
             </div>
-             
+    </section>
+    
+    <section id="last-section">
+        <div class="contact"><h1>Jan<span> Nowak</span></h1>
+        <p>ul. Mostowa 6/13</p>
+        <p>31-061 Kraków</p><br>
+        <p>tel: 606 47 57 59</p>
+        <p>e mail: <a href="mailto:kacper35456@wp.pl"> kacper35456@wp.pl</a></p>
+        </div>
+        <div class="google-icons">
+            <div class="inner-box"><i class="fa fa-facebook fa-3x" aria-hidden="true"></i></div>
+            <div class="inner-box"><i class="fa fa-google-plus fa-3x" aria-hidden="true"></i></div>
+            <div class="inner-box"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></div>
+            <div class="inner-box"><i class="fa fa-linkedin fa-3x" aria-hidden="true"></i></div>
+            
+            
+        </div>
+        
+        <div class="formularz">
+            <form action="mailto:kacper35456@wp.pl" method="post">
+                <label for="name-and-surname"></label><br>
+                <input type="text" name="name-and-suername" id="name and surname" value="Imię i nazwisko"><br>
+                <label for="mail"></label><br>
+                <input type="text" name="mail" id="mail" value="e mail"><br>
+                <label for="massage"></label><br>
+                <textarea name="massage" cols="39" raws="27">Treść Wiadomości</textarea><br>
+                <label for="send"></label><br>
+                <input id="sub" type="submit" value="SEND">
+            </form>
+        </div>
+        
+        
     </section>
 
 </body>
