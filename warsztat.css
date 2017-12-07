@@ -239,83 +239,81 @@ section .text
     width: 100%;
     height: 100px;
 }
-section#last-section
-{
-    width: 100%;
+#last-section {
     background-color: #213b50;
-    height: 350px;
-    padding: 60px;
+    font-family: roboto;
+    font-weight: 300;
 }
-
-section#last-section .contact > p 
-{
-    color: #fff;
-    padding: 0 25;
+#last-section p {
+    font-size: 15px;
 }
-section#last-section .contact p > a:link
-{
-    color: green;
-}
-section#last-section .contact p > a:visited
-{
-    color: green;
-}
-section#last-section .half
-{
+#last-section .half {
     width: 50%;
     float: left;
-    
 }
-section#last-section .formularz form > input
-{
-    width: 300px;
+#last-section .copyright {
+    float: left;
+    width: 100%;
+    background-color: #142634;
+    color: #fff;
+}
+#last-section .contact {
+    padding: 50px 80px;
+    color: #fff;
+}
+#last-section .contact .contact-info {
+    margin-bottom: 80px;
+}
+#last-section .contact a {
+    color: #1ac056;
+}
+#last-section .contact .name {
+    font-size: 2.2em;
+    font-weight: 100;
+    margin-bottom: 80px;
+}
+#last-section .contact .name > .motiv {
+    font-weight: 400;
+}
+#last-section .contact .spacer {
+    margin: 25px 0;
+}
+#last-section .contact .google-icons > .inner-box {
+    float: left;
+    width: 40px;
+    text-align: center;
     height: 40px;
+    border: 1px solid #fff;
+    margin-right: 30px;
 }
-section#last-section .formularz form 
-{
-    width: 300px;
-    left: 300px;
+#last-section .contact .google-icons > .inner-box:last-of-type {
+    margin-right: 0;
 }
-
-input, textarea 
-{
-    background-color: #4e708c; 
+#last-section .contact .google-icons > .inner-box i {
+    font-size: 1.3em;
+    line-height: 40px;
+}
+#last-section .copyright {
+    padding: 2px 0 2px 80px;
+}
+#last-section .form {
+    padding-top: 100px;
+    padding-right: 80px;
+}
+#last-section .form input, #last-section .form textarea {
+    width: 100%;
+    padding: 16px;
+    background-color: #2b4a64;
     border: none;
-    color: lightgray;
-    padding: 5px;
-    font-family: 'Roboto', sans-serif; 
 }
-section#last-section .formularz form > #sub
-{
-    width: 70px;
-    height: 30px;
+#last-section .form input::placeholder, .last-section .form textarea::placeholder {
+    color: #aaa;
+}
+#last-section .form .form-btn {
     background-color: #1ac056;
-    color: white; 
-    padding: 2px;
-    font-size: 15px; 
-    border: none;
+    color: #fff;
     border: 1px solid #fff;
-    left: 230px;
-}
-section#last-section .google-icons
-{
-    width: 65px;
-    height: 65px;
-    margin: 2px;
-    border: 1px solid #fff;
-    clear: both;
-}
-
-section#last-section .google-icons .inner-box
-{
-    width: 65px;
-    height: 65px;
-    margin: 2px;
-    border: 1px solid #fff;  
-    display: inline-block;
-}
-section#last-section .google-icons .inner-box > i
-{
-   color: #fff;
-   align-items: center;
+    padding: 15px 25px;
+    float: right;
+    text-transform: uppercase;
 }
